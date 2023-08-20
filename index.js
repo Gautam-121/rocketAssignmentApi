@@ -24,7 +24,7 @@ async function generateToken(){
     return data?.data?.token
 }
 
-app.post("/getAllData" ,async (req , res)=>{
+app.get("/getAllData" ,async (req , res)=>{
 
     const data =  await axios({
         method: 'post',
