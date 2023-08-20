@@ -3,6 +3,14 @@ const app = express()
 const axios = require("axios")
 
 
+app.get("/checkResponse" , (req , res)=>{
+    res.status(200).json({
+        success : true,
+        message : "Successfully working"
+    })
+})
+
+
 async function generateToken(){
 
     const data = await axios({
